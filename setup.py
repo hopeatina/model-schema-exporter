@@ -11,7 +11,7 @@ setup(
     description="A tool to export model schemas from Django, SQLAlchemy, and FastAPI to JSON",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/model-schema-exporter",
+    url="https://github.com/hopeatina/model-schema-exporter",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -22,7 +22,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.6",
     install_requires=[
         "click",
         "django",
@@ -35,4 +35,8 @@ setup(
             "model-schema-exporter=model_schema_exporter.cli:main",
         ],
     },
+    package_data={
+        'model_schema_exporter': ['example_models/*.py'],
+    },
+    include_package_data=True,
 )
