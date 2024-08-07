@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="model-schema-exporter",
-    version="0.1.0",
+    version="0.1.1",
     author="Hope Atina",
     author_email="",
     description="A tool to export model schemas from Django, SQLAlchemy, and FastAPI to JSON",
